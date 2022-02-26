@@ -76,7 +76,7 @@ const pokeData = () => {
                 pokeHiddenAbility.textContent = `Hidden Ability: ${abilities[i].ability.name}`
             }
         }
-        pokeWeight.textContent = `Weight: ${data.weight} lbs`
+        pokeWeight.textContent = `Weight: ${data.weight / 10} kg`
         pokeHeight.textContent = `Height: ${data.height * 10} cm`
         pokeFrontImg.setAttribute('src', `${data.sprites.front_default}`)
         pokeBackImg.setAttribute('src', `${data.sprites.back_default}`)
