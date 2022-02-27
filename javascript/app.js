@@ -83,6 +83,9 @@ const pokeData = () => {
         pokeShinyFrontImg.setAttribute('src', `${data.sprites.front_shiny}`)
         pokeShinyBackImg.setAttribute('src', `${data.sprites.back_shiny}`)
     })
+    .catch(() => {
+        alert('Please enter a valid name or number!')
+    })
     uInput.value = null
 }
 
